@@ -1,6 +1,6 @@
 /*!
  * cssEaseLib - Easing library for CSS3 Transitions
- * Version: 0.0.1
+ * Version: 0.0.2
  * https://github.com/7vsy/cssEaseLib
  *
  * Copyright(c) 2012 Masato WATANABE <7vsyml@gmail.com>
@@ -27,6 +27,15 @@ cssEaseLib.easeInOut = function(){
   return "ease-in-out";
 }
 
+cssEaseLib.easeInCirc = function(){
+  return cssEaseLib.custom( 0.6, 0.04, 1, 0.34 );
+}
+cssEaseLib.easeOutCirc = function(){
+  return cssEaseLib.custom( 0.08, 0.8, 0.17, 1 );
+}
+cssEaseLib.easeInOutCirc = function(){
+  return cssEaseLib.custom( 0.9, 0.15, 0.15, 0.9 );
+}
 
 cssEaseLib.easeInExpo = function(){
   return cssEaseLib.custom( 1, 0.05, 0.8, 0.04 );
