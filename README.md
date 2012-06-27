@@ -9,10 +9,11 @@ Easing library for CSS3 Transitions.
 ```
 ``` javascript
 <script>
-  $(selector).css({
-    '-webkit-transition-duration' : '1000ms',
-    '-webkit-transition-timing-function' : cssEaseLib.easeInOutBack,
-    '-webkit-transform' : 'translate( 150px, 0px )'
+  document.addEventListener('DOMContentLoaded', function() {
+    var t = document.getElementById('target');
+    t.style.webkitTransitionDuration = '1000ms';
+    t.style.webkitTransitionTimingFunction = cssEaseLib.easeInOutBack();
+    t.style.webkitTransform = 'translate( 150px, 0px )';
   });
 </script>
 ```
